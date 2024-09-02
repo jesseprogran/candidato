@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #32a852; /* Verde do grilo */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 0.6s ease; /* Transição suave para a sombra da caixa */
+}
+
+.new-logo {
+  width: 5px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  border: 2px solid red; /* Exemplo de borda para destacar a nova logo */
+}
+
+.logo img:hover {
+  box-shadow: 10px 5px 1px #023810;
+}
