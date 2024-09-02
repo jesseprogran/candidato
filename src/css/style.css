@@ -259,3 +259,107 @@ section {
     width: 90%;
   }
 }
+
+.contato {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  color: #32a852;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contato p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  text-align: center;
+  color: #333;
+}
+
+.info-item i {
+  font-size: 2rem;
+  color: #32a852;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 1rem;
+}
+
+.info-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #32a852;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+}
