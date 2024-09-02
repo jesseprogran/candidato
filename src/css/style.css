@@ -363,3 +363,49 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
   }
 }
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 90%; /* Ajuste o tamanho das imagens */
+    height: auto; /* Altura automática */
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .contato {
+    padding: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+}
