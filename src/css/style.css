@@ -194,3 +194,68 @@ section {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra da caixa ao passar o mouse */
   transform: scale(1.05); /* Aumenta o tamanho do vídeo ao passar o mouse */
 }
+
+
+.propostas {
+  background-color: #e9f7ef; /* Fundo suave */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.propostas h2 {
+  font-size: 2.5rem;
+  color: #32a852; /* Verde do grilo */
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.proposta-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.proposta-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.proposta-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.proposta-card i {
+  font-size: 2.5rem;
+  color: #32a852;
+  margin-bottom: 20px;
+}
+
+.proposta-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.proposta-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .proposta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proposta-card {
+    width: 90%;
+  }
+}
