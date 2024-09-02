@@ -168,7 +168,7 @@ section {
   cursor: pointer;
 }
 
-.videos {
+/* .videos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -185,16 +185,166 @@ section {
 }
 
 .video-container iframe {
-  width: 100%; /* Faz com que o vídeo preencha o contêiner */
-  height: 100%; /* Faz com que o vídeo preencha o contêiner */
-  object-fit: cover; /* Cobre o contêiner, mantendo a proporção */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
 }
 
 .video-container:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
   transform: scale(1.05); 
   cursor: pointer;
+} */
+
+.depoimentos {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+  max-width: 900px;
 }
+
+.depoimentos h2 {
+  font-size: 2.5rem;
+  color: #32a852; /* Verde do grilo */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.depoimento-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.depoimento-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.depoimento-foto img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.depoimento-texto p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.depoimento-texto strong {
+  display: block;
+  margin-top: 10px;
+  color: #32a852; /* Verde do grilo */
+}
+
+.depoimento-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .depoimento-container {
+    flex-direction: column;
+  }
+}
+
+
+.faq {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  color: #32a852; /* Verde do grilo */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.faq-question {
+  background-color: #32a852; /* Verde do grilo */
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  position: relative;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-question::after {
+  content: '−';
+  position: absolute;
+  right: 15px;
+  font-size: 1.5rem;
+}
+
+.faq-item .faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 15px;
+  font-size: 1.5rem;
+}
+
+.faq-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 0 10px;
+  }
+}
+
 
 
 .propostas {
@@ -260,6 +410,108 @@ section {
     width: 90%;
   }
 }
+
+.events {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.events h2 {
+  font-size: 2.5rem;
+  color: #32a852; /* Verde do grilo */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.event-date {
+  background-color: #32a852; /* Verde do grilo */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 120px;
+  font-size: 1.5rem;
+}
+
+.event-day {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.event-month {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.event-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.event-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.event-details p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.event-link {
+  color: #32a852; /* Verde do grilo */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.event-link:hover {
+  text-decoration: underline;
+}
+
+.event-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .events-container {
+    padding: 0 10px;
+  }
+  
+  .event-item {
+    flex-direction: column;
+  }
+  
+  .event-date {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 .contato {
   background-color: #f9f9f9;
