@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #32a852; /* Verde do grilo */
+  background-color: #FFA726; /* Verde do grilo */
   color: white;
   padding: 20px;
   text-align: center;
@@ -99,7 +99,7 @@ section {
 
 .about-me h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -115,11 +115,11 @@ section {
 .about-me p em {
   font-style: italic;
   font-weight: bold;
-  color: #32a852;
+  color: #FFA726;
 }
 
 .about-me p strong {
-  color: #32a852; /* Destaque com a cor verde */
+  color: #FFA726;
 }
 
 @media (max-width: 768px) {
@@ -168,34 +168,6 @@ section {
   cursor: pointer;
 }
 
-/* .videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.video-container {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  overflow: hidden; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.video-container iframe {
-  width: 100%; 
-  height: 100%;
-  object-fit: cover; 
-}
-
-.video-container:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
-  transform: scale(1.05); 
-  cursor: pointer;
-} */
-
 .depoimentos {
   background-color: #f9f9f9;
   padding: 60px 20px;
@@ -208,7 +180,7 @@ section {
 
 .depoimentos h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -251,7 +223,7 @@ section {
 .depoimento-texto strong {
   display: block;
   margin-top: 10px;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726; 
 }
 
 .depoimento-card:hover {
@@ -277,7 +249,7 @@ section {
 
 .faq h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
@@ -298,7 +270,7 @@ section {
 }
 
 .faq-question {
-  background-color: #32a852; /* Verde do grilo */
+  background-color: #FFA726;
   color: #fff;
   padding: 15px;
   margin: 0;
@@ -355,7 +327,7 @@ section {
 
 .propostas h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   margin-bottom: 40px;
   font-weight: bold;
 }
@@ -385,7 +357,7 @@ section {
 
 .proposta-card i {
   font-size: 2.5rem;
-  color: #32a852;
+  color: #FFA726;
   margin-bottom: 20px;
 }
 
@@ -422,7 +394,7 @@ section {
 
 .events h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
@@ -445,7 +417,7 @@ section {
 }
 
 .event-date {
-  background-color: #32a852; /* Verde do grilo */
+  background-color: #FFA726;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -483,7 +455,7 @@ section {
 }
 
 .event-link {
-  color: #32a852; /* Verde do grilo */
+  color: #FFA726;
   text-decoration: none;
   font-weight: bold;
 }
@@ -513,7 +485,7 @@ section {
 }
 
 .contact {
-  background-color: #f9f9f9;
+  background-color: #FFA726;
   padding: 60px 20px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -529,14 +501,14 @@ section {
 
 .contact h2 {
   font-size: 2.5rem;
-  color: #32a852; /* Verde do grilo */
+  color: #080808;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .contact p {
   font-size: 1.2rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 30px;
 }
 
@@ -562,7 +534,7 @@ section {
   display: block;
   margin-bottom: 8px;
   font-size: 1.1rem;
-  color: #333;
+  color: #080808;
 }
 
 .form-group input,
@@ -570,7 +542,7 @@ section {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #5f5f5f;
   font-size: 1rem;
 }
 
@@ -580,7 +552,7 @@ section {
 
 button[type="submit"] {
   padding: 12px 20px;
-  background-color: #32a852;
+  background-color: #FFA726;
   color: white;
   border: none;
   border-radius: 5px;
@@ -591,7 +563,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #28a745;
+  background-color: #070707;
 }
 
 @media (max-width: 768px) {
@@ -627,12 +599,12 @@ footer {
 }
 
 .social-icon:hover {
-  color: #32a852; /* Verde do grilo */
-  transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+  color: #FFA726;
+  transform: scale(1.2); 
 }
 
 .social-icon i {
-  pointer-events: none; /* Desativa a interação do ponteiro no ícone */
+  pointer-events: none; 
 }
 
 @media (max-width: 600px) {
@@ -655,8 +627,8 @@ footer {
   }
 
   .image-container {
-    width: 90%; /* Ajuste o tamanho das imagens */
-    height: auto; /* Altura automática */
+    width: 90%; 
+    height: auto;
   }
 
   .video-container {
